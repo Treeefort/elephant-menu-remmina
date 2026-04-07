@@ -10,12 +10,12 @@ I wrote this because as a sysadmin of a primarily-Windows shop, I've got a slew 
 
 1. Make sure [elephant-menu](https://aur.archlinux.org/packages/elephant-menus) is installed. (If you're also on Omarchy, it already is)
 2. Place `remmina.lua` in `~/.config/elephant/menus/`
-3. Add a prefix in Walker - I used `\`
+3. Add a prefix in Walker - I used `\` (requires an extra \ since it's an escape.)
 
 ```toml
 # ~./.config/walker/config.toml
 [[providers.prefixes]]
-prefix = "\"
+prefix = "\\"
 provider = "menus:remmina"
 ```
 
