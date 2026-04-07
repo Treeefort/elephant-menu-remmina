@@ -13,7 +13,7 @@ I wrote this because as a sysadmin of a primarily-Windows shop, I've got a slew 
 3. Add a prefix in Walker - I used `\`
 
 ```toml
-# ~./.config/walker.config.toml
+# ~./.config/walker/config.toml
 [[providers.prefixes]]
 prefix = "\"
 provider = "menus:remmina"
