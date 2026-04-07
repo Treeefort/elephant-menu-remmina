@@ -12,7 +12,8 @@ I wrote this because as a sysadmin of a primarily-Windows shop, I've got a slew 
 2. Place `remmina.lua` in `~/.config/elephant/menus/`
 3. Add a prefix in Walker - I used `\`
 
-```~./.config/walker.config.toml
+```toml
+# ~./.config/walker.config.toml
 [[providers.prefixes]]
 prefix = "\"
 provider = "menus:remmina"
@@ -25,9 +26,9 @@ Your service commands may vary slightly.
 
 I set my Action command to:
 
-```
+```lua
+-- ~/.config/elephant/menus/remmina.lua
 Action = "hyprctl dispatch workspace 7 && remmina -c " .. path_to_remmina .. "%VALUE%"
-
 ```
 
 This will always launch my sessions on Workspace 7, which is where I want it. I just wanted to leave this as an example incase you wanted something like this too.
